@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace Xeca;
+
+public class Program
+{
+    public static void Main(String[] Args)
+    {
+        Console.WriteLine("Hello, world!");
+    }
+}
