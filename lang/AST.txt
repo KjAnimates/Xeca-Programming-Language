@@ -1,0 +1,16 @@
+"Create Variable"
+    -> [WORD = "var"] 
+        -> [WORD]
+    -> [EQUAL]
+        -> [ * ]
+end
+
+"Function"
+    -> [WORD = "function"]
+        -> [WORD = *]
+    -> [PAREN_OPEN] :: [PAREN_CLOSE]
+        -> ?[WORD = *]
+            -> ?[EQUAL]
+            -> ?[ * ]
+        -> [COMMA]
+end
